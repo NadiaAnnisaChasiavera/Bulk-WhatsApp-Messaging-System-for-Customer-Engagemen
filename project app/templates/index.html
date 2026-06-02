@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirim Pesan Massal</title>
+</head>
+<body>
+    <h1>Upload File CSV</h1>
+    <!-- Form untuk upload CSV -->
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="file">Pilih file CSV:</label><br>
+        <input type="file" name="file" id="file" accept=".csv"><br><br>
+        <button type="submit">Upload</button>
+    </form>
+
+    <hr>
+
+    <h1>Kirim Pesan Massal</h1>
+    <!-- Form untuk mengirim pesan -->
+    <form action="/send" method="POST">
+        <label for="message">Pesan:</label><br>
+        <textarea name="message" id="message" rows="5" cols="50" placeholder="Masukkan pesan Anda. Gunakan [Nama] untuk menyapa pelanggan."></textarea><br><br>
+        <button type="submit">Kirim Pesan</button>
+    </form>
+</body>
+</html>
